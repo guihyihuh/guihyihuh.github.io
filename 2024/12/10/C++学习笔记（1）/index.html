@@ -247,7 +247,11 @@
 </ul>
 <h3 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">#define Day 7</span><br><span class="line">int main()&#123;</span><br><span class="line">    const int month = 12;</span><br><span class="line">    //Day = 10; month = 10;</span><br><span class="line">    //报错：常量不可以修改</span><br><span class="line">    cout &lt;&lt; &quot;一周共有&quot; &lt;&lt; Day &lt;&lt; &quot;天&quot; &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; &quot;一年共有&quot; &lt;&lt; month &lt;&lt; &quot;月&quot; &lt;&lt; endl;</span><br><span class="line">    system(&quot;pause&quot;)</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="运行结果：一周共有7天一年共有12月"><a href="#运行结果：一周共有7天一年共有12月" class="headerlink" title="运行结果：一周共有7天一年共有12月"></a>运行结果：<br><table><tr><td bgcolor="black"><font color="antiquewhite">一周共有7天<br>一年共有12月</font></td></tr></table></h2><h2 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h2><p><strong>作用</strong>:关键字是C++中预先保留的单词(标识符)</p>
+<p>运行结果：</p>
+<table><tr><td bgcolor="black"><font color="antiquewhite">一周共有7天<br>一年共有12月</font></td></tr></table>
+
+<hr>
+<h2 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h2><p><strong>作用</strong>:关键字是C++中预先保留的单词(标识符)</p>
 <ul>
 <li>在定义变量或者常量时候,不要用关键字</li>
 </ul>
@@ -357,7 +361,7 @@
 <li>标识符中字母区分大小写</li>
 </ul>
 <p><strong>建议</strong>:给标识符命名时,争取做到见名知意的效果。方便自己和他人的院读</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//1、标识符不可以是关键字</span><br><span class="line">int int = 10;</span><br><span class="line">//2、标识符是由字母、数字、下划线构成</span><br><span class="line">int abc = 10;</span><br><span class="line">int _abc = 20;</span><br><span class="line">int _123abc = 30;</span><br><span class="line">/3、标识符第一个字符只能是字母或下划线</span><br><span class="line">//int 123abc = 40;</span><br><span class="line">//4、标识符区分大小写</span><br><span class="line">int aaa = 100:</span><br><span class="line">//cout &lt;&lt; AAA &lt;&lt; end1;</span><br><span class="line">//报错：AAA和aaa不是同一个名称</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//1、标识符不可以是关键字</span><br><span class="line">int int = 10;</span><br><span class="line">//2、标识符是由字母、数字、下划线构成</span><br><span class="line">int abc = 10;</span><br><span class="line">int _abc = 20;</span><br><span class="line">int _123abc = 30;</span><br><span class="line">//3、标识符第一个字符只能是字母或下划线</span><br><span class="line">//int 123abc = 40;</span><br><span class="line">//4、标识符区分大小写</span><br><span class="line">int aaa = 100:</span><br><span class="line">//cout &lt;&lt; AAA &lt;&lt; end1;</span><br><span class="line">//报错：AAA和aaa不是同一个名称</span><br></pre></td></tr></table></figure>
 
             </div>
 
