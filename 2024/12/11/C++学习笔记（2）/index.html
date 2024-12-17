@@ -156,7 +156,7 @@
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <table><tr><td bgcolor="lavender"><b>C++学习笔记（2）</b></td></tr></table>
+                <table><tr><td bgcolor=lavender><b>C++学习笔记（2）</b></td></tr></table>
 
 <h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><p>C++规定在创建一个变量或者常量时,必须要指定出相应的数据类型,否则无法给变量分配内存</p>
 <hr>
@@ -204,7 +204,7 @@
 <h3 id="示例"><a href="#示例" class="headerlink" title="示例:"></a>示例:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int main()&#123;</span><br><span class="line">    cout &lt;&lt; &quot;short类型所占内存空间为:&quot; &lt;&lt; sizeof(short) &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; &quot;int类型所占内存空间为:&quot; &lt;&lt; sizeof(int) &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; &quot;1ong类型所占内存空间为:&quot; &lt;&lt; sizeof(1ong) &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; &quot;1ong1ong类型所占内存空间为:&quot; &lt;&lt; sizeof(1ong1ong) &lt;&lt; end1</span><br><span class="line">    system(&quot;pause&quot;);</span><br><span class="line">return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>运行结果：</p>
-<table><tr><td bgcolor="black"><font color="antiquewhite">short类型所占内存空间为:2<br>int类型所占内存空间为:4<br>1ong类型所占内存空间为:4<br>1ong1ong类型所占内存空间为:8</font></td></tr></table>
+<table><tr><td bgcolor=black><font color=antiquewhite >short类型所占内存空间为:2<br>int类型所占内存空间为:4<br>1ong类型所占内存空间为:4<br>1ong1ong类型所占内存空间为:8</font></td></tr></table>
 
 <blockquote>
 <p>整型大小比较<br>short &lt; int &lt;&#x3D; 1ong &lt;&#x3D; 1ong long</p>
@@ -240,7 +240,7 @@
 <h3 id="代码示例-1"><a href="#代码示例-1" class="headerlink" title="代码示例"></a>代码示例</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">int main()&#123;</span><br><span class="line">//1、单精度 float</span><br><span class="line">/2、双精度 double</span><br><span class="line">//默认情况下,输出一个小数,会显示出最多6位有效数字</span><br><span class="line">f1oat f1 = 3.1415926f;</span><br><span class="line">cout &lt;&lt; &quot; f1 = ” &lt;&lt; f1 &lt;&lt; endl;</span><br><span class="line">double d1 = 3.1415926;</span><br><span class="line">cout &lt;&lt; &quot; d1 = ” &lt;&lt; d1 &lt;&lt; endl;</span><br><span class="line">//统计float和double占用内存空间</span><br><span class="line">cout &lt;&lt; &quot;float类型所占内存空间为:&quot; &lt;&lt; sizeof(float) &lt;&lt; endl;</span><br><span class="line">cout &lt;&lt; &quot;double类型所占内存空间为:&quot; &lt;&lt; sizeof(double) &lt;&lt; endl;</span><br><span class="line">system(&quot;pause&quot;);</span><br><span class="line">return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>运行结果：</p>
-<table><tr><td bgcolor="black"><font color="antiquewhite">f1 = 3.14159<br>d1 = 3.14159<br>float类型所占内存空间为:4<br>double类型所占内存空间为:8</font></td></tr></table>
+<table><tr><td bgcolor=black><font color=antiquewhite >f1 = 3.14159<br>d1 = 3.14159<br>float类型所占内存空间为:4<br>double类型所占内存空间为:8</font></td></tr></table>
 
 <blockquote>
 <p>给实型变量赋值时，默认类型为double,可以在小数之后加上一个 f 代表这个数据是float类型</p>
@@ -249,7 +249,7 @@
 <h2 id="科学计数法"><a href="#科学计数法" class="headerlink" title="科学计数法"></a>科学计数法</h2><h3 id="代码示例-2"><a href="#代码示例-2" class="headerlink" title="代码示例"></a>代码示例</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int main()&#123;</span><br><span class="line">    float f1 = 3e2; //3*10^2</span><br><span class="line">    cout &lt;&lt; &quot;f1 =&quot; &lt;&lt; f1 &lt;&lt;endl;</span><br><span class="line">    float f2 = 3e-2; //3*0.1^2</span><br><span class="line">    cout &lt;&lt; &quot;f2 =&quot; &lt;&lt; f2 &lt;&lt;endl;</span><br><span class="line">    system(&quot;pause&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>运行结果：</p>
-<table><tr><td bgcolor="black"><font color="antiquewhite">f1 = 300<br>f2 = 0.03</font></td></tr></table>
+<table><tr><td bgcolor=black><font color=antiquewhite >f1 = 300<br>f2 = 0.03</font></td></tr></table>
 
 <blockquote>
 <p>可以理解为代码中的 e 代表数学中的 ‘10^’</p>
@@ -267,10 +267,10 @@
 <h3 id="代码示例-3"><a href="#代码示例-3" class="headerlink" title="代码示例"></a>代码示例</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">int main()&#123;</span><br><span class="line">    //1、字符型变量创建方式</span><br><span class="line">    char ch = &#x27;a&#x27;</span><br><span class="line">    cout &lt;&lt; ch &lt;&lt; end1;</span><br><span class="line">    //2、字符型变量所占内存大小</span><br><span class="line">    cout &lt;&lt; &quot;char字符型变量所占内存:&quot;&quot; &lt;&lt; sizeof(char) &lt;&lt; end1;</span><br><span class="line">    //3、字符型变量常见错误</span><br><span class="line">    //char ch2 = &quot;b&quot;;//创建字符型变量时候,要用单引号</span><br><span class="line">    //char ch2 = &#x27;abcdef&#x27;;//创建字符型变量时候,单引号内只能有一个字符</span><br><span class="line">    //4、字符型变量对应ASCII编码</span><br><span class="line">    cout &lt;&lt; (int)ch &lt;&lt; end1;</span><br><span class="line">    system(&quot;pause&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>运行结果：</p>
-<table><tr><td bgcolor="black"><font color="antiquewhite">a<br>char字符型变量所占内存:1<br>97</font></td></tr></table>
+<table><tr><td bgcolor=black><font color=antiquewhite >a<br>char字符型变量所占内存:1<br>97</font></td></tr></table>
 
 <hr>
-<h2 id="ASCII码表"><a href="#ASCII码表" class="headerlink" title="ASCII码表"></a>ASCII码表</h2><p><img src="/.com//image-3.png" alt="alt text"></p>
+<h2 id="ASCII码表"><a href="#ASCII码表" class="headerlink" title="ASCII码表"></a>ASCII码表</h2><p><img src="/./C++2/ASCII.png" alt="alt text"></p>
 <blockquote>
 <p>常用的ASCII码表字符：</p>
 <ul>
