@@ -151,26 +151,83 @@
 </nav>
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url(./JavaWeb学习笔记（1）/picture1.png);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >JavaWeb学习笔记 1</h2></a>
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >JavaWeb介绍</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
                 <table><tr><td bgcolor=lavender><b>JavaWeb学习笔记 （1）</b></td></tr></table>
 
 <hr>
-<h1 id="学习路线"><a href="#学习路线" class="headerlink" title="学习路线"></a>学习路线</h1><p><img src="/2024/07/09/hello-world/1%EF%BC%89/learningRoad.png" alt="alt text"></p>
+<h1 id="JavaWeb介绍以及学习规划"><a href="#JavaWeb介绍以及学习规划" class="headerlink" title="JavaWeb介绍以及学习规划"></a>JavaWeb介绍以及学习规划</h1><hr>
+<h2 id="学习路线"><a href="#学习路线" class="headerlink" title="学习路线"></a>学习路线</h2><p><img src="/2024/07/09/hello-world/1%EF%BC%89/learningRoad.png" alt="alt text"></p>
 <blockquote>
 <p>本笔记摘抄于B站Up-黑马程序员的JavaWeb开发教程</p>
 </blockquote>
 <hr>
-<h1 id="课程收获"><a href="#课程收获" class="headerlink" title="课程收获"></a>课程收获</h1><p><img src="/2024/07/09/hello-world/1%EF%BC%89/result.png" alt="alt text"></p>
+<h2 id="课程收获"><a href="#课程收获" class="headerlink" title="课程收获"></a>课程收获</h2><p><img src="/2024/07/09/hello-world/1%EF%BC%89/result.png" alt="alt text"></p>
 <hr>
-<h1 id="Web开发介绍"><a href="#Web开发介绍" class="headerlink" title="Web开发介绍"></a>Web开发介绍</h1><h2 id="什么是Web"><a href="#什么是Web" class="headerlink" title="什么是Web?"></a>什么是Web?</h2><ul>
+<h2 id="Web开发介绍"><a href="#Web开发介绍" class="headerlink" title="Web开发介绍"></a>Web开发介绍</h2><h3 id="什么是Web"><a href="#什么是Web" class="headerlink" title="什么是Web?"></a>什么是Web?</h3><ul>
 <li><strong>Web</strong>:全球广域网,也称为万维网(wwwworldwideWeb),能够通过浏览器访问的网站</li>
 </ul>
 <p><img src="/2024/07/09/hello-world/1%EF%BC%89/creatingMode.png" alt="alt text"></p>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
+<h3 id="Web网站开发模式"><a href="#Web网站开发模式" class="headerlink" title="Web网站开发模式"></a>Web网站开发模式</h3><ul>
+<li><strong>混合开发</strong></li>
+</ul>
+<p><img src="/2024/07/09/hello-world/1%EF%BC%89/together.png" alt="alt text"></p>
+<ul>
+<li><strong>前后端分离开发</strong></li>
+</ul>
+<p><img src="/2024/07/09/hello-world/1%EF%BC%89/alone.png" alt="alt text"></p>
+<blockquote>
+<p>在当今市场环境中，前后端分离开发的应用远多于混合开发，故主要学习前后端分离开发的Web开发模式</p>
+</blockquote>
+<h3 id="Web开发课程安排"><a href="#Web开发课程安排" class="headerlink" title="Web开发课程安排"></a>Web开发课程安排</h3><p><img src="/2024/07/09/hello-world/1%EF%BC%89/class.png" alt="alt text"></p>
+<hr>
+<h2 id="Web前端开发介绍"><a href="#Web前端开发介绍" class="headerlink" title="Web前端开发介绍"></a>Web前端开发介绍</h2><h3 id="网页有哪些部分组成"><a href="#网页有哪些部分组成" class="headerlink" title="网页有哪些部分组成?"></a>网页有哪些部分组成?</h3><ul>
+<li>文字、图片、音频、视频、超链接…</li>
+</ul>
+<h3 id="我们看到的网页-背后的本质是什么"><a href="#我们看到的网页-背后的本质是什么" class="headerlink" title="我们看到的网页,背后的本质是什么?"></a>我们看到的网页,背后的本质是什么?</h3><ul>
+<li>程序员写的前端代码</li>
+</ul>
+<h3 id="前端的代码是如何转换成用户眼中的网页的"><a href="#前端的代码是如何转换成用户眼中的网页的" class="headerlink" title="前端的代码是如何转换成用户眼中的网页的?"></a>前端的代码是如何转换成用户眼中的网页的?</h3><ul>
+<li>通过浏览器转化(解析和渲染)成用户看到的网页</li>
+<li>浏览器中对代码进行解析渲染的部分,称为浏览器内核</li>
+</ul>
+<blockquote>
+<p>提示:不同的浏览器,内核不同,对于相同的前端代码解析的效果会存在差异</p>
+</blockquote>
+<h3 id="Web标准"><a href="#Web标准" class="headerlink" title="Web标准"></a>Web标准</h3><ul>
+<li>Web标准也称为网页标准,由一系列的标准组成,大部分由W3C(WorldWideWebConsotium,万维网联盟)负责制定。</li>
+</ul>
+<h3 id="三个组成部分"><a href="#三个组成部分" class="headerlink" title="三个组成部分"></a>三个组成部分</h3><ul>
+<li>HTML:负责网页的结构(页面元素和内容)。</li>
+<li>CSS:负责网页的表现(页面元素的外观、位置等页面样式,如:颜色、大小等)。</li>
+<li>JavaScript:负责网页的行为(交互效果)。</li>
+</ul>
+<hr>
+<table><tr><td bgcolor=lavender><b>第一篇内容到此结束...</b></td></tr></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
 
             <!-- Post Comments -->
