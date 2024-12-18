@@ -226,7 +226,59 @@
 <hr>
 <h3 id="HTML标签参考手册"><a href="#HTML标签参考手册" class="headerlink" title="HTML标签参考手册"></a>HTML标签参考手册</h3><p>点击<a href = "https://www.w3school.com.cn/tags/index.asp" target = "_blank">HTML标签参考手册</a>打开对应网站</p>
 <hr>
+<p><strong>示例代码</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang = &quot;en&quot;&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset = &quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;meta http-equiv = &quot;X-UA-Compatible&quot;&gt;</span><br><span class="line">        &lt;meta name = &quot;viewport&quot; content = &quot;width = device-width, initial-scale = 1.0&quot;&gt;</span><br><span class="line">        &lt;title&gt;焦点访谈：中国底气 新思想夯实大国粮仓&lt;/title&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        &lt;img src = &quot;https://i2.sinaimg.cn/dy/deco/2012/0613/yocc20120613img01/news_logo.png&quot;&gt;新浪政务 &gt; 正文</span><br><span class="line">        &lt;h1&gt;焦点访谈：中国底气 新思想夯实大国粮仓&lt;/h1&gt;</span><br><span class="line">        &lt;hr&gt;</span><br><span class="line">        2023年03月02日 21:50 央视网</span><br><span class="line">        &lt;hr&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/htm1&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>运行结果</strong></p>
+<p><img src="/2024/07/09/hello-world/2%EF%BC%89/result2.png" alt="alt text"></p>
 <hr>
+<h2 id="CSS的引入"><a href="#CSS的引入" class="headerlink" title="CSS的引入"></a>CSS的引入</h2><h3 id="引入方式及代码示例"><a href="#引入方式及代码示例" class="headerlink" title="引入方式及代码示例"></a>引入方式及代码示例</h3><ul>
+<li><strong>行内样式</strong>：写在标签的style属性中（不推荐）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1 style = &quot;xxx: xxx; xxx: xxx;&quot;&gt;中国新闻网&lt;/h1&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>内嵌样式</strong>： 写在style标签中（可以写在页面任何位置，但通常约定写在head标签中）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    h1&#123;</span><br><span class="line">        &lt;!-- 属性名：属性值；--&gt;</span><br><span class="line">        xxx: xxx;</span><br><span class="line">        xxx: xxx;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>外联样式</strong>：写在一个单独的.css文件中（需要通过link标签在网页中引入）</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">h1&#123;</span><br><span class="line">    xxx: xxx;</span><br><span class="line">    xxx: xxx;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel = &quot;stylesheet&quot; href = &quot;css/new.css&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang = &quot;en&quot;&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset = &quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;meta http-equiv = &quot;X-UA-Compatible&quot;&gt;</span><br><span class="line">        &lt;meta name = &quot;viewport&quot; content = &quot;width = device-width, initial-scale = 1.0&quot;&gt;</span><br><span class="line">        &lt;title&gt;焦点访谈：中国底气 新思想夯实大国粮仓&lt;/title&gt;</span><br><span class="line">        &lt;!-- 内嵌样式 --&gt;</span><br><span class="line">        &lt;!-- &lt;style&gt;</span><br><span class="line">                h1&#123;</span><br><span class="line">                    color:red;</span><br><span class="line">                &#125;</span><br><span class="line">            &lt;/style&gt; --&gt;</span><br><span class="line">        &lt;!-- 外联样式 --&gt;</span><br><span class="line">        &lt;!-- 须提前在HTML的css文件夹中的对应文件中写入相应的样式代码 --&gt;</span><br><span class="line">        &lt;link rel = &quot;stylesheet&quot; href = &quot;css/new.css&quot;&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        &lt;img src = &quot;https://i2.sinaimg.cn/dy/deco/2012/0613/yocc20120613img01/news_logo.png&quot;&gt;新浪政务 &gt; 正文</span><br><span class="line">        &lt;!-- 行内样式 --&gt;</span><br><span class="line">        &lt;!-- &lt;h1 style = &quot;color:red;&quot;&gt;中国新闻网&lt;/h1&gt; --&gt;</span><br><span class="line">        &lt;h1&gt;焦点访谈：中国底气 新思想夯实大国粮仓&lt;/h1&gt;</span><br><span class="line">        &lt;hr&gt;</span><br><span class="line">        2023年03月02日 21:50 央视网</span><br><span class="line">        &lt;hr&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/htm1&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>运行结果</strong></p>
+<p><img src="/2024/07/09/hello-world/2%EF%BC%89/result3.png" alt="alt text"></p>
+<hr>
+<h3 id="颜色表现形式"><a href="#颜色表现形式" class="headerlink" title="颜色表现形式"></a>颜色表现形式</h3><table>
+<thead>
+<tr>
+<th>表现方式</th>
+<th>表示含义</th>
+<th>取值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>关键字</td>
+<td>预定义的颜色名</td>
+<td>red、green、blue…</td>
+</tr>
+<tr>
+<td>rgb表示法</td>
+<td>红绿蓝三原色，各项取值范围：0~255</td>
+<td>rgb(0,0,0)、rgb(255,255,255)、rgb(255,0,0)</td>
+</tr>
+<tr>
+<td>十六进制表示法</td>
+<td>#开头，将数字转换成十六进制表示</td>
+<td>#000000、#ff0000、#cccccc<br>简写：#000、#ccc</td>
+</tr>
+</tbody></table>
 
             </div>
 
