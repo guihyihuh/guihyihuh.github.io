@@ -160,37 +160,159 @@
 
 <hr>
 <hr>
-<h1 id="HTML与CSS的入门–正文与表"><a href="#HTML与CSS的入门–正文与表" class="headerlink" title="HTML与CSS的入门–正文与表"></a>HTML与CSS的入门–正文与表</h1><hr>
+<h1 id="HTML与CSS的入门–正文处理"><a href="#HTML与CSS的入门–正文处理" class="headerlink" title="HTML与CSS的入门–正文处理"></a>HTML与CSS的入门–正文处理</h1><hr>
 <h2 id="正文排版"><a href="#正文排版" class="headerlink" title="正文排版"></a>正文排版</h2><hr>
 <h3 id="视频标签-video"><a href="#视频标签-video" class="headerlink" title="视频标签&lt; video&gt;"></a>视频标签&lt; video&gt;</h3><h4 id="video-属性"><a href="#video-属性" class="headerlink" title="&lt; video&gt;属性"></a>&lt; video&gt;属性</h4><p><strong>src</strong>:规定视频的url<br><strong>controls</strong>:显示播放控件<br><strong>width</strong>:播放器的宽度<br><strong>height</strong>:播放器的高度</p>
 <hr>
 <h3 id="音频标签-audio"><a href="#音频标签-audio" class="headerlink" title="音频标签&lt; audio&gt;"></a>音频标签&lt; audio&gt;</h3><h4 id="audio-属性"><a href="#audio-属性" class="headerlink" title="&lt; audio&gt;属性"></a>&lt; audio&gt;属性</h4><p><strong>src</strong>:规定音频的url<br><strong>controls</strong>:显示播放控件</p>
 <hr>
-<h4 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;video src = &quot;https://www.bilibili.com/video/BV1m84y1w7Tb/?spm_id_from=333.788.videopod.episodes&amp;vd_source=d12de8a30a597cbf879dd4fc7a4caf34&amp;p=10&quot; controls width = 500px&gt;&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h4><ul>
+<li>插入视频</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;video src = &quot;./picture2/视频名字.mp4&quot; controls width = 500px&gt;&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>插入音频</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;audio src = &quot;./picture2/音频名字.音频格式&quot; controls&gt;&lt;/audio&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>运行结果</strong></p>
+<blockquote>
+<p>视频和音频以这种形式上传hexo的博客无法播放<br>接下来介绍以iframe框架实现上传视频和音频</p>
+</blockquote>
+<hr>
+<hr>
+<h2 id="iframe框架（了解）"><a href="#iframe框架（了解）" class="headerlink" title="iframe框架（了解）"></a>iframe框架（了解）</h2><h3 id="框架简介"><a href="#框架简介" class="headerlink" title="框架简介"></a>框架简介</h3><p><strong>作用</strong>：标签规定了一个内联框架，一个内联框架可以被用来在当前 HTML 文档中嵌入另一个文档（也可以是视频和音频）</p>
+<hr>
+<h3 id="常用标签"><a href="#常用标签" class="headerlink" title="常用标签"></a>常用标签</h3><h4 id="name属性"><a href="#name属性" class="headerlink" title="name属性"></a>name属性</h4><p><strong>作用</strong>：规定 &lt; iframe&gt; 的名称<br><strong>语法</strong>：&lt; iframe name&#x3D;”name”&gt;</p>
+<hr>
+<h4 id="src属性"><a href="#src属性" class="headerlink" title="src属性"></a>src属性</h4><p><strong>作用</strong>：规定嵌入在 &lt; iframe&gt; 中的文档的地址<br><strong>语法</strong>：&lt; iframe src&#x3D;”URL”&gt;<br><strong>可能的值</strong>：</p>
+<ul>
+<li><strong>绝对URL</strong>：指向另一个网站（比如 src&#x3D;“<a target="_blank" rel="noopener" href="http://www.example.com/default.htm%E2%80%9D%EF%BC%89">http://www.example.com/default.htm”）</a></li>
+<li><strong>相对URL</strong>：指向网站中的一个文件（比如 src&#x3D;“default.htm”）</li>
+</ul>
+<hr>
+<h4 id="width属性"><a href="#width属性" class="headerlink" title="width属性"></a>width属性</h4><p><strong>作用</strong>：规定&lt; iframe&gt;的宽度<br><strong>语法</strong>：&lt; iframe width&#x3D;”pixels”&gt;</p>
+<hr>
+<h4 id="height属性"><a href="#height属性" class="headerlink" title="height属性"></a>height属性</h4><p><strong>作用</strong>：规定&lt; iframe&gt;的高度<br><strong>语法</strong>：&lt; iframe height&#x3D;”pixels”&gt;</p>
+<hr>
+<h4 id="frameborder属性"><a href="#frameborder属性" class="headerlink" title="frameborder属性"></a>frameborder属性</h4><p><strong>作用</strong>：规定是否显示 &lt; iframe&gt; 周围的边框</p>
+<hr>
+<h4 id="scrolling属性"><a href="#scrolling属性" class="headerlink" title="scrolling属性"></a>scrolling属性</h4><p><strong>作用</strong>：规定是否在 &lt; iframe&gt; 中显示滚动条</p>
+<hr>
+<h4 id="framespacing属性"><a href="#framespacing属性" class="headerlink" title="framespacing属性"></a>framespacing属性</h4><p><strong>作用</strong>：用于设定框架集（&lt; frameset&gt;）中框架边框的宽度</p>
+<hr>
+<h4 id="allowfullscreen属性"><a href="#allowfullscreen属性" class="headerlink" title="allowfullscreen属性"></a>allowfullscreen属性</h4><p><strong>作用</strong>：用于控制HTML中的&lt; iframe&gt;内的内容是否允许进入全屏模式</p>
+<hr>
+<h3 id="其他属性"><a href="#其他属性" class="headerlink" title="其他属性"></a>其他属性</h3><ul>
+<li>border、marginwidth、marginheight：参考本篇文章末尾的盒子属性介绍</li>
+<li>其余属性参考<a href = "https://www.runoob.com/tags/tag-iframe.html" target = "_blank">HTML iframe标签参考手册</a></li>
+</ul>
+<hr>
+<h4 id="代码示例-1"><a href="#代码示例-1" class="headerlink" title="代码示例"></a>代码示例</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?isOutside=true&amp;aid=52664208&amp;bvid=BV1Q4411J7oR&amp;cid=92247649&amp;p=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
 
 <p><strong>运行结果</strong></p>
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=52664208&bvid=BV1Q4411J7oR&cid=92247649&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 <hr>
+<h4 id="代码示例-2"><a href="#代码示例-2" class="headerlink" title="代码示例"></a>代码示例</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=2125598772&amp;auto=1&amp;height=66&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>运行结果</strong></p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2125598772&auto=1&height=66"></iframe>
 
 <hr>
-<h4 id="代码示例-1"><a href="#代码示例-1" class="headerlink" title="代码示例"></a>代码示例</h4><ul>
-<li>插入音频</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;audio src = &quot;./picture2/周杰伦 - 七里香.flac&quot; controls&gt;&lt;/audio&gt;</span><br></pre></td></tr></table></figure>
-
-<p><strong>运行结果</strong><br><audio src = "周杰伦 - 七里香.flac" controls></audio></p>
 <h3 id="段落标签"><a href="#段落标签" class="headerlink" title="段落标签"></a>段落标签</h3><h4 id="p-作用"><a href="#p-作用" class="headerlink" title="&lt; p&gt;作用"></a>&lt; p&gt;作用</h4><ul>
 <li>用于将正文内容分段</li>
 </ul>
 <hr>
 <h3 id="文本加粗标签"><a href="#文本加粗标签" class="headerlink" title="文本加粗标签"></a>文本加粗标签</h3><h4 id="b-、-strong"><a href="#b-、-strong" class="headerlink" title="&lt; b&gt;、&lt; strong&gt;"></a>&lt; b&gt;、&lt; strong&gt;</h4><p><strong>区别</strong>：</p>
 <ul>
-<li>&lt; b&gt;:仅用于加粗文本</li>
-<li>&lt; strong&gt;:不仅可以加粗文本，还可以强调该加粗文本</li>
+<li><strong>&lt; b&gt;</strong>:仅用于加粗文本</li>
+<li><strong>&lt; strong&gt;</strong>:不仅可以加粗文本，还可以强调该加粗文本</li>
 </ul>
 <hr>
+<h4 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">    &lt;b&gt;运行结果&lt;/b&gt;</span><br><span class="line">&lt;/p&gt;</span><br><span class="line">&lt;p&gt;</span><br><span class="line">    远在千里，近在眼前</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>运行结果</strong><br>远在千里，近在眼前</p>
+<blockquote>
+<p>在前端代码中简单换行而不是使用&lt; p&gt;标签，在运行的时候会被浏览器忽略<br>包括段落开始的缩进，不使用对应标签也会被当成多余字符舍弃</p>
+</blockquote>
+<hr>
+<h3 id="缩进，行距，对齐方式"><a href="#缩进，行距，对齐方式" class="headerlink" title="缩进，行距，对齐方式"></a>缩进，行距，对齐方式</h3><p><strong>text-indent</strong>: 规定文本块（text-block）中的的首行缩进<br><strong>line-height</strong>: 设置行间的距离（行高）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p&#123;</span><br><span class="line">    text-indent:36px; /*首行缩进36个像素 */</span><br><span class="line">    line-height:20px; /*设置行高为20个像素 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>利用元素选择器添加此代码即可</p>
+</blockquote>
+<hr>
+<h4 id="文本对齐方式"><a href="#文本对齐方式" class="headerlink" title="文本对齐方式"></a>文本对齐方式</h4><p><strong>text-align</strong>:设置文本对齐方式：</p>
+<ul>
+<li><strong>center</strong>：居中对齐</li>
+<li><strong>left</strong>：左对齐</li>
+<li><strong>right</strong>：右对齐</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">h1 &#123;text-align:center;&#125;</span><br><span class="line">h2 &#123;text-align:left;&#125;</span><br><span class="line">h3 &#123;text-align:right;&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>设置 h1、h2、h3 元素的文本对齐方式</p>
+</blockquote>
+<hr>
+<h4 id="CSS属性参考手册"><a href="#CSS属性参考手册" class="headerlink" title="CSS属性参考手册"></a>CSS属性参考手册</h4><p>点击<a href = "https://www.w3school.com.cn/cssref/index.asp#google_vignette" target = "_blank">CSS属性参考手册</a>打开对应网站</p>
+<hr>
+<hr>
+<h2 id="正文布局"><a href="#正文布局" class="headerlink" title="正文布局"></a>正文布局</h2><h3 id="盒子"><a href="#盒子" class="headerlink" title="盒子"></a>盒子</h3><p><strong>盒子</strong>:页面中所有的元素(标签),都可以看做是一个盒子,由盒子将页面中的元素包含在一个矩形区域内,通过盒子的视角更方便的进行页面布局</p>
+<hr>
+<h4 id="盒子模型组成"><a href="#盒子模型组成" class="headerlink" title="盒子模型组成"></a>盒子模型组成</h4><ul>
+<li>内容区域(content)</li>
+<li>内边距区域(padding)</li>
+<li>边框区域(border)</li>
+<li>外边距区域(margin)</li>
+</ul>
+<p><strong>如图所示</strong></p>
+<p><img src="/2024/07/09/hello-world/3%EF%BC%89/box.png" alt="alt text"></p>
+<hr>
+<h3 id="布局标签"><a href="#布局标签" class="headerlink" title="布局标签"></a>布局标签</h3><p><strong>布局标签</strong>:实际开发网页中,会大量频繁的使用div和span这两个没有语义的布局标签</p>
+<hr>
+<h4 id="标签-div-span"><a href="#标签-div-span" class="headerlink" title="标签&lt; div&gt;&lt; span&gt;"></a>标签&lt; div&gt;&lt; span&gt;</h4><p><strong>特点及区别</strong></p>
+<ul>
+<li><p><strong>div标签</strong>:</p>
+</li>
+<li><p>一行只显示一个(独占一行)</p>
+</li>
+<li><p>宽度默认是父元素的宽度,高度默认由内容撑开</p>
+</li>
+<li><p>可以设置宽高(width、height)</p>
+</li>
+<li><p><strong>span标签</strong>:</p>
+</li>
+<li><p>一行可以显示多个</p>
+</li>
+<li><p>宽度和高度默认由内容撑开</p>
+</li>
+<li><p>不可以设置宽高(width、height)</p>
+</li>
+</ul>
+<hr>
+<h4 id="代码示例-3"><a href="#代码示例-3" class="headerlink" title="代码示例"></a>代码示例</h4><ul>
+<li>布局标签和盒子属性的使用</li>
+</ul>
+<p><img src="/2024/07/09/hello-world/3%EF%BC%89/example2.png" alt="alt text"></p>
+<p><strong>运行结果</strong></p>
+<p><img src="/2024/07/09/hello-world/3%EF%BC%89/result6.png" alt="alt text"></p>
+<blockquote>
+<p>在设置边距&#x2F;宽度时，如果上下左右的值的大小（可以是像素也可以是百分比）均一样，可以简写为一个<br>注:如果只需要设置某一个方位的边框、内边距、外边距,可以在属性名后加上-位置,如:padding-top、padding-1eft、padding-right…</p>
+</blockquote>
+<hr>
+<h4 id="margin属性参考手册"><a href="#margin属性参考手册" class="headerlink" title="margin属性参考手册"></a>margin属性参考手册</h4><p>点击此处</p>
+<ul>
+<li><a href = "https://www.w3school.com.cn/cssref/pr_gen_content.asp" target = "_blank"> - content</a></li>
+<li><a href = "https://www.w3school.com.cn/cssref/pr_padding.asp" target = "_blank"> - padding</a></li>
+<li><a href = "https://www.w3school.com.cn/cssref/pr_border.asp" target = "_blank"> - border</a></li>
+<li><a href = "https://www.w3school.com.cn/cssref/pr_margin.asp" target = "_blank"> - margin</a><br>打开对应属性参考网站</li>
+</ul>
+<hr>
+<table><tr><td bgcolor=lavender><b>第三篇内容到此结束...</b></td></tr></table>
+
 
             </div>
 
